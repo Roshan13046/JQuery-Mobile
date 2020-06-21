@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pages , Dialog and Transitions.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width , initial-scale=1">
+
+    <!--    JQuery mobile CDN -->
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <!--    Page 1-->
+    <div data-role="page" id="page1" data-theme="b">
+        <div data-role="header">
+            <h1>Page1</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a data-role="button" href="#page2" data-transition="flip">Go to page 2.</a>
+            
+<!--            Dialog Box Link -->
+            <a data-role="button" href="dialog.html" data-transition="pop" data-rel="dialog" data-theme="a">Open Dialog Box.</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <!--  End of  Page 1-->
+
+    <!--    Page 2-->
+    <div data-role="page" id="page2" data-theme="a">
+        <div data-role="header">
+            <h1>Page 2</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a data-role="button" href="#page1" data-transition="pop">Go back to page 1.</a>
+        </div>
+        <div data-role="footer" data-position="fixed" >
+            <h1 >Footer</h1>
+        </div>
+    </div>
+    <!--    End of Page2-->
+</body>
+
+</html>

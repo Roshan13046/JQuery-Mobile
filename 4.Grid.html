@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pages , Dialog and Transitions.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width , initial-scale=1">
+
+    <!--    JQuery mobile CDN -->
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <!--    Page 1-->
+    <div data-role="page" id="page1" data-theme="a">
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-transition="slide" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+
+                    <li><a href="#call" data-transition="flip" data-icon="phone">Call</a></li>
+
+                    <li><a href="#contact" data-transition="flip" data-icon="mail">Contacts</a></li>
+
+                    <li><a href="#search" data-transition="pop" data-icon="search">Search</a></li>
+
+                    <li><a href="#video" data-transition="pop" data-icon="video">Video</a></li>
+                    <!--
+                    
+                     <li><a href="#page2" data-transition="slide" data-icon="camera">Camera</a></li>    
+-->
+                </ul>
+
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="ui-grid-b">
+<!--                Note : ui-grid-solo,ui-grid-a,ui-grid-b,ui-grid-solo-c etc .....
+-->
+                <div class="ui-block-a">
+                    <a href="#" data-role="button">Phone no's</a>
+                    <p>878632 383893798 8378638 03982307</p>
+                </div>
+                
+                 <div class="ui-block-b">
+                    <a href="#" data-role="button">Email 's</a>
+                    <p>rod@gmail.com ap.@gmail.com </p>
+                </div>
+                
+                 <div class="ui-block-c">
+                    <a href="#" data-role="button">Messages</a>
+                    <p>Recharge, Company etc </p>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <!--  End of  Page 1-->
+
+
+
+    <!--    Call page-->
+    <div data-role="page" id="call" data-theme="a">
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-transition="slide" data-icon="home">Home</a></li>
+
+                    <li><a href="#call" class="ui-btn-active ui-state-persist" data-transition="flip" data-icon="phone">Call</a></li>
+
+                    <li><a href="#contact" data-transition="flip" data-icon="mail">Contacts</a></li>
+
+                    <li><a href="#search" data-transition="pop" data-icon="search">Search</a></li>
+
+                    <li><a href="#video" data-transition="pop" data-icon="video">Video</a></li>
+                    <!--
+                    
+                     <li><a href="#page2" data-transition="slide" data-icon="camera">Camera</a></li>    
+-->
+                </ul>
+
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <h1 style="color:dodgerblue">Call page. </h1>
+            <a data-role="button" href="#page2" data-transition="flip">Go to page 2.</a>
+
+            <!--            Dialog Box Link -->
+            <a data-role="button" href="dialog.html" data-transition="pop" data-rel="dialog" data-theme="b">Open Dialog Box.</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <!--  End of  call-->
+
+
+    <!--   Contact page-->
+    <div data-role="page" id="contact" data-theme="a">
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-transition="slide" data-icon="home">Home</a></li>
+
+                    <li><a href="#call" data-transition="flip" data-icon="phone">Call</a></li>
+
+                    <li><a href="#contact" class="ui-btn-active ui-state-persist" data-transition="flip" data-icon="mail">Contacts</a></li>
+
+                    <li><a href="#search" data-transition="pop" data-icon="search">Search</a></li>
+
+                    <li><a href="#video" data-transition="pop" data-icon="video">Video</a></li>
+                    <!--
+                    
+                     <li><a href="#page2" data-transition="slide" data-icon="camera">Camera</a></li>    
+-->
+                </ul>
+
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <h1 style="color:darkviolet">Contact page. </h1>
+            <a data-role="button" href="#page2" data-transition="flip">Go to page 2.</a>
+
+            <!--            Dialog Box Link -->
+            <a data-role="button" href="dialog.html" data-transition="pop" data-rel="dialog" data-theme="b">Open Dialog Box.</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <!--  End of  Contacts-->
+
+
+
+    <!--   Seach page-->
+    <div data-role="page" id="contact" data-theme="a">
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-transition="slide" data-icon="home">Home</a></li>
+
+                    <li><a href="#call" data-transition="flip" data-icon="phone">Call</a></li>
+
+                    <li><a href="#contact" data-transition="flip" data-icon="mail">Contacts</a></li>
+
+                    <li><a href="#search" class="ui-btn-active ui-state-persist" data-transition="pop" data-icon="search">Search</a></li>
+
+                    <li><a href="#video" data-transition="pop" data-icon="video">Video</a></li>
+                    <!--
+                    
+                     <li><a href="#page2" data-transition="slide" data-icon="camera">Camera</a></li>    
+-->
+                </ul>
+
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <h1 style="color:darkorchid">Search page. </h1>
+            <a data-role="button" href="#page2" data-transition="flip">Go to page 2.</a>
+
+            <!--            Dialog Box Link -->
+            <a data-role="button" href="dialog.html" data-transition="pop" data-rel="dialog" data-theme="b">Open Dialog Box.</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <!--  End of  Search page-->
+
+
+    <!--  Video page-->
+    <div data-role="page" id="contact" data-theme="a">
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-transition="slide" data-icon="home">Home</a></li>
+
+                    <li><a href="#call" data-transition="flip" data-icon="phone">Call</a></li>
+
+                    <li><a href="#contact" data-transition="flip" data-icon="mail">Contacts</a></li>
+
+                    <li><a href="#search" data-transition="pop" data-icon="search">Search</a></li>
+
+                    <li><a href="#video" class="ui-btn-active ui-state-persist" data-transition="pop" data-icon="video">Video</a></li>
+                    <!--
+                    
+                     <li><a href="#page2" data-transition="slide" data-icon="camera">Camera</a></li>    
+-->
+                </ul>
+
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <h1 style="color:darkorchid">Video page. </h1>
+            <a data-role="button" href="#page2" data-transition="flip">Go to page 2.</a>
+
+            <!--            Dialog Box Link -->
+            <a data-role="button" href="dialog.html" data-transition="pop" data-rel="dialog" data-theme="b">Open Dialog Box.</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <!--  End of  Video page-->
+
+    <!--    Page 2-->
+    <div data-role="page" id="page2" data-theme="a">
+        <div data-role="header">
+            <h1>Page 2</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a data-role="button" href="#page1" data-transition="pop">Go back to page 1.</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <!--    End of Page2-->
+</body>
+
+</html>
